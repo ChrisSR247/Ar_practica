@@ -20,7 +20,7 @@ dependencies:
   vector_math: ^2.1.4
 
   # Navegación
-  go_router: ^14.0.0
+  go_router: ^17.0.0
 
   # State management
   provider: ^6.1.5
@@ -30,7 +30,7 @@ dependencies:
 
   # Opcionales para otras funcionalidades que ya tenías
   image_picker: ^1.1.2
-  google_mlkit_text_recognition: ^0.14.0
+  google_mlkit_text_recognition: ^0.15.0
   model_viewer_plus: ^1.7.0   # útil si quieres vista previa 3D normal (no AR)
 
   # ELIMINADAS O COMENTADAS (causan conflicto o no sirven para esta práctica)
@@ -39,11 +39,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
+
+dependency_overrides:
+  permission_handler: ^12.0.1
+  permission_handler_android: ^13.0.1
 
 flutter:
   uses-material-design: true
 
   # Carpeta donde pondrás la textura del plano (triángulo)
-  assets:
-    - assets/images/triangle.png
+  # assets:
+  #   - assets/images/triangle.png
